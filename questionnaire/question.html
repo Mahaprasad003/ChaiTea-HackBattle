@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skin Type Questionnaire</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Skin Type Questionnaire</h1>
+    <p>Please answer the following questions to help us understand your skin type.</p>
+    
+    <div class="form-container">
+      <form id="dynamic-form">
+        <!-- Manually added questions with radio buttons -->
+
+        <!-- Question 1 -->
+        <div class="question">
+          <label for="q1">Whats your gender?</label>
+          <div class="radio-group">
+            <input type="radio" id="q1-male" name="q1" value="male">
+            <label for="q1-male" class="radio-label">Male</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="q1-female" name="q1" value="female">
+            <label for="q1-female" class="radio-label">Female</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="q1-others" name="q1" value="others">
+            <label for="q1-others" class="radio-label">Prefer Not to say</label>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+          <label for="q2">How old are you?</label>
+          <div class="radio-group">
+            <input type="radio" id="q2-below16" name="q2" value="below16">
+            <label for="q2-below16" class="radio-label">Below 16</label>
+          </div>
+          <!-- 16 to 20 -->
+            <div class="radio-group">
+                <input type="radio" id="q2-16-20" name="q2" value="16-20">
+                <label for="q2-16-20" class="radio-label">16 - 20</label>
+            </div>
+            <!-- 21 to 30 -->
+            <div class="radio-group">
+                <input type="radio" id="q2-21-30" name="q2" value="21-30">
+                <label for="q2-21-30" class="radio-label">21 - 30</label>
+            </div>
+            <!-- 31 to 40 -->
+            <div class="radio-group">
+                <input type="radio" id="q2-31-40" name="q2" value="31-40">
+                <label for="q2-31-40" class="radio-label">31 - 40</label>
+            </div>
+            <!-- 41 to 50 -->
+            <div class="radio-group">
+                <input type="radio" id="q2-41-50" name="q2" value="41-50">
+                <label for="q2-41-50" class="radio-label">41 - 50</label>
+            </div>
+            <!-- above 50 -->
+            <div class="radio-group">
+                <input type="radio" id="q2-above50" name="q2" value="above50">
+                <label for="q2-above50" class="radio-label">Above 50</label>
+            </div> 
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <label for="q3">What specific skin concerns do you have? (Select all that apply)</label>
+            <!-- Acne -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="q3-acne" name="q3" value="acne">
+                <label for="q3-acne" class="checkbox-label">No noticeable reaction</label>
+            </div>
+            <!-- Dark spots/pigmentation -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="q3-dark-spots" name="q3" value="dark_spots">
+                <label for="q3-dark-spots" class="checkbox-label">Moderate reaction</label>
+            </div>
+            <!-- •	Aging (fine lines, wrinkles) -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="q3-aging" name="q3" value="aging">
+                <label for="q3-aging" class="checkbox-label">Severe reaction</label>
+            </div>   
+            <!-- Redness/rosacea -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="q3-redness" name="q3" value="redness">
+                <label for="q3-redness" class="checkbox-label">Redness/rosacea</label>
+            </div>
+            <!-- Uneven skin tone -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="q3-uneven-skin-tone" name="q3" value="uneven_skin_tone">
+                <label for="q3-uneven-skin-tone" class="checkbox-label">Uneven skin tone</label>
+            </div>
+            <!-- Enlarged pores -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="q3-enlarged-pores" name="q3" value="enlarged_pores">
+                <label for="q3-enlarged-pores" class="checkbox-label">Enlarged pores</label>
+            </div>
+            <!-- Dehydration -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="q3-dehydration" name="q3" value="dehydration">
+                <label for="q3-dehydration" class="checkbox-label">Dehydration</label>
+            </div>
+            <!-- Dullness -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="q3-dullness" name="q3" value="dullness">
+                <label for="q3-dullness" class="checkbox-label">Dullness</label>
+            </div>
+            <!-- Other (please specify) -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="q3-other" name="q3" value="other">
+                <label for="q3-other" class="checkbox-label">Other (please specify)</label>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <label for="q4">Do you wear Sunscreen</label>
+            <!-- Never, Rarely, Often, Always-->
+            <div class="radio-group">
+                <input type="radio" id="q4-never" name="q4" value="never">
+                <label for="q4-never" class="radio-label">Never</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="q4-rarely" name="q4" value="rarely">
+                <label for="q4-rarely" class="radio-label">Rarely</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="q4-often" name="q4" value="often">
+                <label for="q4-often" class="radio-label">Often</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="q4-always" name="q4" value="always">
+                <label for="q4-always" class="radio-label">Always</label>
+            </div>
+        </div>
+        
+        <!-- Question 5 -->
+        <div class="question">
+            <label for="q5">Do you take any tropical medication</label>
+            <!-- Yes, No -->
+            <div class="radio-group">
+                <input type="radio" id="q5-yes" name="q5" value="yes">
+                <label for="q5-yes" class="radio-label">Yes</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="q5-no" name="q5" value="no">
+                <label for="q5-no" class="radio-label">No</label>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <label for="q6">Are there any specific ingredients you want to avoid? (E.g., parabens, sulfates, fragrance)</label>
+            <div class="radio-group">
+                <input type="radio" id="q6-yes" name="q6" value="yes" onclick="toggleTextField(true)">
+                <label for="q6-yes" class="radio-label">Yes</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="q6-no" name="q6" value="no" onclick="toggleTextField(false)">
+                <label for="q6-no" class="radio-label">No</label>
+            </div>
+            <div id="ingredient-input" style="display: none;">
+                <label for="avoided-ingredients">Please specify the ingredients you want to avoid:</label>
+                <input type="text" id="avoided-ingredients" name="avoided-ingredients">
+            </div>
+        </div>
+        
+        <script>
+            function toggleTextField(isVisible) {
+                document.getElementById('ingredient-input').style.display = isVisible ? 'block' : 'none';
+            }
+        </script>
+
+        <!-- Question 7 -->
+         <!-- How often do you struggle with dark circles or puffy eyes
+Always 
+Sometimes
+Never
+ -->
+        <div class="question">
+            <label for="q7">How often do you struggle with dark circles or puffy eyes</label>
+            <!-- Always, Sometimes, Never -->
+            <div class="radio-group">
+                <input type="radio" id="q7-always" name="q7" value="always">
+                <label for="q7-always" class="radio-label">Always</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="q7-sometimes" name="q7" value="sometimes">
+                <label for="q7-sometimes" class="radio-label">Sometimes</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="q7-never" name="q7" value="never">
+                <label for="q7-never" class="radio-label">Never</label>
+            </div>
+        
+
+        <!-- Question 8 -->
+         <!-- How many hours of sleep do you manage at night
+Less than 6 hours
+6 to 8 hours
+More than 8 hours
+ -->
+        <div class="question">
+            <label for="q8">How many hours of sleep do you manage at night</label>
+            <!-- Less than 6 hours, 6 to 8 hours, More than 8 hours -->
+            <div class="radio-group">
+                <input type="radio" id="q8-less-than-6" name="q8" value="less_than_6">
+                <label for="q8-less-than-6" class="radio-label">Less than 6 hours</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="q8-6-to-8" name="q8" value="6_to_8">
+                <label for="q8-6-to-8" class="radio-label">6 to 8 hours</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="q8-more-than-8" name="q8" value="more_than_8">
+                <label for="q8-more-than-8" class="radio-label">More than 8 hours</label>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <!-- What are you skincare Goals
+Hydrate 
+Brighten 
+Reduce Acne
+Minimalize redness
+Rejuvenate 
+Tighten
+Smooth
+Reduce Pigmentation
+ -->
+        <div class="question">
+            <label for="q9">What are you skincare Goals</label>
+            <!-- Hydrate, Brighten, Reduce Acne, Minimalize redness, Rejuvenate, Tighten, Smooth, Reduce Pigmentation -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="q9-hydrate" name="q9" value="hydrate">
+                <label for="q9-hydrate" class="checkbox-label">Hydrate</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="q9-brighten" name="q9" value="brighten">
+                <label for="q9-brighten" class="checkbox-label">Brighten</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="q9-reduce-acne" name="q9" value="reduce_acne">
+                <label for="q9-reduce-acne" class="checkbox-label">Reduce Acne</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="q9-minimalize-redness" name="q9" value="minimalize_redness">
+                <label for="q9-minimalize-redness" class="checkbox-label">Minimalize redness</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="q9-rejuvenate" name="q9" value="rejuvenate">
+                <label for="q9-rejuvenate" class="checkbox-label">Rejuvenate</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="q9-tighten" name="q9" value="tighten">
+                <label for="q9-tighten" class="checkbox-label">Tighten</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="q9-smooth" name="q9" value="smooth">
+                <label for="q9-smooth" class="checkbox-label">Smooth</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="q9-reduce-pigmentation" name="q9" value="reduce_pigmentation">
+                <label for="q9-reduce-pigmentation" class="checkbox-label">Reduce Pigmentation</label>
+            </div>
+        </div>
+        <!-- Submit Button -->
+        <button id="submit-btn" type="button">Submit</button>
+      </form>
+    </div>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
