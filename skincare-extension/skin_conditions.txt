@@ -1,0 +1,1 @@
+skintypes = ["normal", "oily", "dry", "sensitive", "combination"]

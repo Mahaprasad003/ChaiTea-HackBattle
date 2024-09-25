@@ -1,0 +1,1 @@
+concerns =['Acne', 'Broken barrier', 'Dark Spots', 'Exfoliation', 'Hydration', 'Irritation', 'Pigmentation', 'Pimples', 'Pores', 'Skin soothing', 'Sun protection', 'Whitehead/Blackhead']
